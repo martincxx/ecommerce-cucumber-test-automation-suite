@@ -1,17 +1,15 @@
 {
-  "name": "test-todoapp-cucumberBDD",
+  "name": "ecommerce-cucumber-test-automation-suite",
   "version": "1.0.0",
-  "description": "Functional testing of a Todo App with Cucumber",
+  "description": "Functional testing of a React Ecommerce App with Cucumber",
   "author": "Martin Coronel <martincxx@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/martincxx/test-todoapp-cucumberBDD",
+  "homepage": "https://github.com/martincxx/ecommerce-cucumber-test-automation-suite",
   "main": "./node_modules/.bin/wdio",
   "scripts": {
     "allure:history": "mkdir -p allure-report/history ./test/reports/allure-results/history && cp -a allure-report/history ./test/reports/allure-results/",
     "allure-report": "node_modules/.bin/allure generate --clean ./test/reports/allure-results && allure open",
     "junit-report": "node_modules/.bin/junit-viewer --results=./test/reports/junit-results --save=junit-results.html && open junit-results.html",
-    "test-sauce": "wdio ./test/config/wdio.sauce.conf.js",
-    "test-browserstack": "wdio ./test/config/wdio.browserstack.conf.js",
     "test-local": "npm run allure:history && wdio ./test/config/wdio.local.conf.js",
     "test-local-headless": "npm run allure:history && wdio ./test/config/wdio.headless.local.conf.js",
     "test-mobile": "wdio ./test/config/wdio.appium.conf.js"
@@ -24,11 +22,12 @@
     "automation",
     "e2e",
     "test",
-    "cucumber"
+    "cucumber",
+    "react"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/martincxx/test-todoapp-cucumberBDD.git"
+    "url": "https://github.com/martincxx/ecommerce-cucumber-test-automation-suite.git"
   },
   "dependencies": {},
   "devDependencies": {
