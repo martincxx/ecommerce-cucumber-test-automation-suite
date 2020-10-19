@@ -26,3 +26,5 @@ class registerAccount extends Page{
           this.register.click();
       }
 } 
+
+export default new registerAccount();

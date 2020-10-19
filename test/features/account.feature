@@ -18,6 +18,7 @@ Feature: Account
         And I am on the log in page
         When I log in with valid credentials
         Then I am redirected to the main page
+        And my name is visible on top of page
 
     @acc03
     Scenario: acc03 - Logout
@@ -38,7 +39,7 @@ Feature: Account
         Given I am logged in on the site
         When I navigate to the personal information page
         And I update my details
-        Then I receive feedback that my account is updated
+        Then my profile details
 
     @acc06
     Scenario: acc06 - Change address

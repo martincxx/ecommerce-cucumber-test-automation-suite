@@ -9,3 +9,5 @@ class amazonApp extends Page{
       }
     
 }
+
+export default new amazonApp();
