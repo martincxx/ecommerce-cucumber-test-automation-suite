@@ -11,19 +11,20 @@ class registerAccount extends Page{
     get rePassword() { return $("#rePassword");}
 
     get register() { return $("#root > div > main > div > div > form > ul > li:nth-child(7) > button")}
-    
+    get accountForm () {return $("#root > div > main > div > div > form > ul")}
     
     open(url) {
         super.open(url);
       }
     
       createAccount(user){
-          this.name.waitForEnabled();
-          this.name.setValue(user.name);
-          this.email.setValue(user.email);
-          this.password.setValue(user.password);
-          this.rePassword.setValue(user.password);
-          this.register.click();
+        this.accountForm.waitForEnabled();
+        this.name.setValue(user.name);
+        this.email.setValue(user.email);
+        this.password.setValue(user.password);
+        this.rePassword.setValue(user.password);
+        this.register.click();
+        browser.pause(2000);
       }
 } 
 

@@ -10,6 +10,7 @@ Feature: Account
         And I am on the log in page
         When I create my account
         Then I am redirected to the main page
+        And my name is visible on top of page
 
 
     @acc02
