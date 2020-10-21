@@ -1,7 +1,12 @@
-const USER ={
-  name: "Oak 1e1d01e",
-  email:"eee1eee11d0e@gmail.com",
-  password: "442110d1",
-};
+
+const newRandomUser = ()=>{
+  var randomEmail = require("random-email");
+  var randomLorem = require("random-lorem");
+    return {name: randomLorem(),
+          email: randomEmail(),
+          password: randomLorem()    
+      };
+}
+const USER = newRandomUser();
 
 export { USER };

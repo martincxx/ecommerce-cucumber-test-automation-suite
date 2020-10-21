@@ -29,7 +29,10 @@
     "type": "git",
     "url": "https://github.com/martincxx/ecommerce-cucumber-test-automation-suite.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "random-email": "^1.0.3",
+    "random-lorem": "^1.0.4"
+  },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
