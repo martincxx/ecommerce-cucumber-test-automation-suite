@@ -28,21 +28,21 @@ Feature: Account
         Then I receive feedback that I am logged out
         And I cannot visit my account page anymore
 
-    @acc04
+    @acc04 @Pending
     Scenario: acc04 - Check orders
         Given I am logged in on the site
         When I navigate to my orders
         Then I see a list of my orders
         And I can open an order to see the order details
 
-    @acc05
+    @acc05 @Pending
     Scenario: acc05 - Edit account
         Given I am logged in on the site
         When I navigate to the personal information page
         And I update my details
         Then my profile details
 
-    @acc06
+    @acc06 @Pending
     Scenario: acc06 - Change address
         Given I am logged in on the site
         When I navigate to the personal information page

@@ -16,15 +16,21 @@ class registerAccount extends Page{
     open(url) {
         super.open(url);
       }
+
+      getUserCookies(){
+        let cookie = browser.getNamedCookie("userInfo");
+        console.log(cookie);
+        return cookie;
+      }
     
-      createAccount(user){
-        this.accountForm.waitForEnabled();
-        this.name.setValue(user.name);
-        this.email.setValue(user.email);
-        this.password.setValue(user.password);
-        this.rePassword.setValue(user.password);
-        this.register.click();
-        browser.pause(2000);
+    createAccount(user){
+      this.accountForm.waitForEnabled();
+      this.name.setValue(user.name);
+      this.email.setValue(user.email);
+      this.password.setValue(user.password);
+      this.rePassword.setValue(user.password);
+      this.register.click();
+      browser.pause(2000);
       }
 } 
 

@@ -1,6 +1,6 @@
 import { Then } from "cucumber";
 import amazonApp from "../pageobjects/amazonApp";
-import { USER } from  "../../utilities/constants"
+import { USER } from  "../../utilities/constants";
 
 Then(/^I am redirected to the main page$/, () => {
   amazonApp.isHomepage().should.be.true;
