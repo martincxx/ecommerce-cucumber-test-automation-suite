@@ -14,8 +14,14 @@ Given(/^I am on the log in page$/, function () {
 });
 
 Given(/^I log in with valid credentials$/, function () {
-  let userInfo = registerAccount.getUserCookies();  
+  const userInfo = registerAccount.getUserCookies();  
   amazonApp.open("/");
   browser.addCookie(userInfo)
-  browser.pause(5000)
+  browser.pause(2000)
+});
+
+Given(/^I am logged in on the site$/, function () {
+  amazonApp.open("/");
+  //console.log("already logged in")
+  browser.pause(3000)
 });

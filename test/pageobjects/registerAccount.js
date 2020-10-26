@@ -12,14 +12,13 @@ class registerAccount extends Page{
 
     get register() { return $("#root > div > main > div > div > form > ul > li:nth-child(7) > button")}
     get accountForm () {return $("#root > div > main > div > div > form > ul")}
-    
+
     open(url) {
         super.open(url);
       }
 
       getUserCookies(){
-        let cookie = browser.getNamedCookie("userInfo");
-        console.log(cookie);
+        const cookie = browser.getNamedCookie("userInfo");
         return cookie;
       }
     

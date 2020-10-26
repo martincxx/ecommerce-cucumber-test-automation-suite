@@ -8,4 +8,3 @@ When(/^I create my account$/, () => {
   registerAccount.createAccount(USER);
 });
 
-

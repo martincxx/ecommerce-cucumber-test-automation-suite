@@ -21,14 +21,7 @@ Feature: Account
         Then I am redirected to the main page
         And my name is visible on top of page
 
-    @acc03
-    Scenario: acc03 - Logout
-        Given I am logged in on the site
-        When I click the Log out button
-        Then I receive feedback that I am logged out
-        And I cannot visit my account page anymore
-
-    @acc04 @Pending
+    @acc03 @Pending
     Scenario: acc04 - Check orders
         Given I am logged in on the site
         When I navigate to my orders
@@ -43,8 +36,8 @@ Feature: Account
         Then my profile details
 
     @acc06 @Pending
-    Scenario: acc06 - Change address
+    Scenario: acc06 - Change name
         Given I am logged in on the site
         When I navigate to the personal information page
-        And I change my street name
-        Then I receive feedback that my account is updated
+        And I change my name
+        Then I name is updated

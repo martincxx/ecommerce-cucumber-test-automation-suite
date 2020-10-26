@@ -9,3 +9,8 @@ Then(/^I am redirected to the main page$/, () => {
 Then(/^my name is visible on top of page$/, () => {
   amazonApp.getloggerUserName().should.equal(USER.name);
 });
+
+Then(/^my name is not visible on top of page$/, () => {
+  amazonApp.getloggerUserName().should.equal("Sign In");
+});
+

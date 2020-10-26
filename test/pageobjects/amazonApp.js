@@ -7,7 +7,7 @@ class amazonApp extends Page{
     get createAccount () { return $("#root > div > main > div > div > form > ul > li:nth-child(7) > a");}
     get cart() {return $("#root > div > header > div.header-links > a:nth-child(1)");}
     get amazona(){return $("#root > div > header > div.brand > a");}
-    
+    get logOut() {return $("#root > div > main > div > div > div.profile-info > div > form > ul > li:nth-child(7) > button");}
     open(url) {
         super.open(url);
       }
@@ -31,8 +31,15 @@ class amazonApp extends Page{
       this.cart.waitForEnabled();
       this.cart.click();
       this.amazona.click();
+      browser.pause(4000);
       return this.signIn.getText().trim();
     }
+
+    getUserProfile(){
+      this.signIn.waitForEnabled();
+      this.signIn.click();
+    }
+
 }
 
 export default new amazonApp();
