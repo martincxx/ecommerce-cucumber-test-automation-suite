@@ -17,4 +17,4 @@ Feature: Account
         Given I am logged in on the site
         When I add "2" "Adidas Classic Pants"
         Then my cart shows those products
-        And the import is "130" dollars
+        And the import is "$130"

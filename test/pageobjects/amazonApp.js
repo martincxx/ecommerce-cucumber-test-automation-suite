@@ -69,7 +69,7 @@ class amazonApp extends Page{
       product.click();
       this.productQuantity.waitForEnabled();
       this.productQuantity.selectByAttribute("value", quantity);
-
+      this.addToCartButton.click();
     }
 
 }

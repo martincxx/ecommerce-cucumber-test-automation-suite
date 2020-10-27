@@ -14,3 +14,10 @@ Then(/^my name is not visible on top of page$/, () => {
   amazonApp.getloggerUserName().should.equal("Sign In");
 });
 
+Then(/^my cart shows those products$/, () =>{
+
+});
+
+Then(/^the import is "([^"]*)?"$/, () =>{
+
+});
