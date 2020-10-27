@@ -8,4 +8,6 @@ When(/^I create my account$/, () => {
   registerAccount.createAccount(USER);
 });
 
-When(/^I add "([^"]*)?" "([^"]*)?"$/, (quantity, item))
+When(/^I add "([^"]*)?" "([^"]*)?"$/, (quantity, item) =>{
+  amazonApp.addToCart(item, quantity);
+})
