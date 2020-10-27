@@ -13,8 +13,8 @@ Feature: Account
         And my name is visible on top of page
 
     @shop01
-    Scenario Outline:
-        Given I am on the main page
-        When I add <product> with <size>
+    Scenario:
+        Given I am logged in on the site
+        When I add "2" "Adidas Classic Pants"
         Then my cart shows those products
-
+        And the import is "130" dollars
